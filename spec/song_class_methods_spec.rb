@@ -57,11 +57,11 @@ describe "Song Class Methods" do
     end
     
     it 'creates a new Song object with the provided title if one doesn\'t already exist' do
-      blank_space = Song.find_by_name("Blank Space")
+      blank_space = Song.find_by_name("Fluffy")
       expect(blank_space).to be(nil)
 
-      blank_space = Song.find_or_create_by_name("Blank Space")
-      expect(blank_space.name).to eq("Blank Space")
+      blank_space = Song.find_or_create_by_name("Fluffy")
+      expect(blank_space.name).to eq("Fluffy")
     end
   end
 

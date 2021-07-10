@@ -33,7 +33,7 @@ The `Song` class provides a class variable `@@all` to store all instances for
 
 You have to build class methods that interact on the class data of `@@all` and
 provide the rest of our program with a semantic API on the `Song` class with
-methods such as `Song.find_or_create_by_name("Blank Space")`.
+methods such as `Song.find_by_name("Blank Space")` or `Song.create_by_name("Blank Space")`.
 
 ### `Song.create`
 
